@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Center | Atención Médica Integral</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <img src="Logo.jpeg" alt="Medfit Solutions Logo" class="logo-image" />
+        <span class="logo-text">Medfit Solutions</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#especialistas" data-i18n="nav.specialists">Especialistas</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="tag" data-i18n="hero.tag">Atención de excelencia 24/7</p>
+          <h1 data-i18n="hero.title">Innovación médica para cuidar lo más importante: tu salud</h1>
+          <p class="subtitle" data-i18n="hero.subtitle">
+            Diagnóstico avanzado, especialistas certificados y trato humano en un solo lugar.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary" data-i18n="hero.cta1">Agendar cita</a>
+            <a href="#servicios" class="btn btn-secondary" data-i18n="hero.cta2">Ver servicios</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3 data-i18n="hero.cardTitle">¿Necesitas atención inmediata?</h3>
+          <p data-i18n="hero.cardText">Nuestro equipo está disponible para emergencias y consultas prioritarias.</p>
+          <button class="btn btn-primary w-full" data-i18n="hero.cardBtn">Contactar ahora</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicios">
+      <div class="container">
+        <h2 data-i18n="services.title">Nuestros servicios</h2>
+        <div class="cards">
+          <article class="card">
+            <img class="service-image" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" alt="Workplace physical exam">
+            <h3 data-i18n="services.card1.title">Exámenes físicos adaptados a las necesidades de tu lugar de trabajo</h3>
+            <p data-i18n="services.card1.text">Exámenes ocupacionales personalizados por industria y puesto para mantener seguridad, cumplimiento y personal apto para laborar.</p>
+          </article>
+          <article class="card">
+            <img class="service-image" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="DOT physical exam">
+            <h3 data-i18n="services.card2.title">Exámenes físicos DOT</h3>
+            <p data-i18n="services.card2.text">Evaluaciones DOT con examinador certificado para verificar visión, audición, presión arterial y condición general según FMCSA.</p>
+          </article>
+          <article class="card">
+            <img class="service-image" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Drug testing">
+            <h3 data-i18n="services.card3.title">Pruebas de drogas (DOT y No-DOT)</h3>
+            <p data-i18n="services.card3.text">Pruebas de drogas DOT y No-DOT (paneles 5, 8 y 10) para procesos pre-empleo, aleatorios, post-accidente y retorno.</p>
+          </article>
+          <article class="card">
+            <img class="service-image" src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=900&q=80" alt="Instant drug testing">
+            <h3 data-i18n="services.card4.title">Pruebas instantáneas de drogas</h3>
+            <p data-i18n="services.card4.text">Resultados rápidos en sitio con pruebas de orina; no negativos pueden confirmarse en laboratorio certificado.</p>
+          </article>
+          <article class="card">
+            <img class="service-image" src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80" alt="Breath alcohol testing">
+            <h3 data-i18n="services.card5.title">Pruebas de alcohol en aliento (DOT y No-DOT)</h3>
+            <p data-i18n="services.card5.text">Pruebas de alcohol en aliento con equipos aprobados para escenarios pre-empleo, aleatorios y post-accidente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialists" id="especialistas">
+      <div class="container">
+        <h2 data-i18n="specialists.title">Equipo de especialistas</h2>
+        <p class="section-subtitle" data-i18n="specialists.subtitle">
+          Profesionales con experiencia internacional comprometidos con tu bienestar.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <h2 data-i18n="contact.title">Contáctenos</h2>
+          <p data-i18n="contact.address.line1">6990 NO 37.ª AVE</p>
+          <p data-i18n="contact.address.line2">Miami, Florida 33147</p>
+          <p><a href="mailto:Admin@medfitmiami.com" data-i18n="contact.email">Admin@medfitmiami.com</a></p>
+          <p data-i18n="contact.schedule.weekday">Lunes a viernes de 7:30 a 17:00 horas</p>
+          <p data-i18n="contact.schedule.saturday">Sábado cerrado</p>
+          <p data-i18n="contact.schedule.sunday">Domingo cerrado</p>
+          <a class="btn btn-secondary map-btn" href="https://maps.google.com/?q=6990+NW+37th+Ave,+Miami,+FL+33147" target="_blank" rel="noopener" data-i18n="contact.mapBtn">Open in Google Maps</a>
+        </div>
+        <form class="contact-form">
+          <input type="text" data-i18n-placeholder="form.name" placeholder="Nombre completo" />
+          <input type="email" data-i18n-placeholder="form.email" placeholder="Correo electrónico" />
+          <textarea rows="4" data-i18n-placeholder="form.message" placeholder="Cuéntanos tu necesidad"></textarea>
+          <button type="button" class="btn btn-primary" data-i18n="form.submit">Enviar</button>
+        </form>
+      </div>
+      <div class="container map-embed-wrap">
+        <iframe
+          title="Medfit Solutions Location"
+          class="map-embed"
+          src="https://www.google.com/maps?q=6990+NW+37th+Ave,+Miami,+FL+33147&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <button id="chatToggle" class="chat-toggle" aria-label="Open chat" data-i18n="chat.toggle">Chat</button>
+  <section id="chatWidget" class="chat-widget" aria-live="polite">
+    <div class="chat-header">
+      <strong data-i18n="chat.title">Virtual Assistant</strong>
+      <button id="chatClose" class="chat-close" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chatMessages" class="chat-messages">
+      <div class="chat-bot" data-i18n="chat.welcome">Hello! How can we help you today?</div>
+    </div>
+    <div class="chat-quick-actions">
+      <button type="button" class="chat-quick" data-question="hours" data-i18n="chat.q.hours">Hours</button>
+      <button type="button" class="chat-quick" data-question="location" data-i18n="chat.q.location">Location</button>
+      <button type="button" class="chat-quick" data-question="appointment" data-i18n="chat.q.appointment">Appointment</button>
+    </div>
+    <div class="chat-input-wrap">
+      <input id="chatInput" type="text" data-i18n-placeholder="chat.input" placeholder="Type your question..." />
+      <button id="chatSend" type="button" data-i18n="chat.send">Send</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer.copy">© 2026 MedNova Medical Center. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
